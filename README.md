@@ -6,16 +6,16 @@ This was a project to get hands-on with real-time motion control on a microcontr
 
 ## Demo
 
-<video src="media/demo/deal-demo.MOV" controls width="640"></video>
+<video src="media/demo/deal-demo.mp4" poster="media/demo/deal-demo-poster.jpg" controls width="640"></video>
 
-*PID driving to a sequence of positions, firing a card at each one, then moving to the next — simulating a full deal around the table. The VCNT2030 proximity sensor gives closed-loop confirmation that a card actually launched before the robot advances, so a jam or misfeed doesn't get treated as a successful deal. This clip is from an earlier hardware revision. ([raw file](media/demo/deal-demo.MOV) if the player above doesn't load)*
+*PID driving to a sequence of positions, firing a card at each one, then moving to the next — simulating a full deal around the table. The VCNT2030 proximity sensor gives closed-loop confirmation that a card actually launched before the robot advances, so a jam or misfeed doesn't get treated as a successful deal. This clip is from an earlier hardware revision.*
 
 | | |
 |---|---|
-| [**Teleoperation**](media/demo/teleoperation.MOV) | Manually driving the central axis with the control box knob. |
-| [**Homing sequence**](media/demo/homing-sequence.MOV) | Automatic homing against the limit switches on power-up. |
-| [**PID tuning**](media/demo/pid-tuning.MOV) | Live on-device menu for tuning `K_p`, `K_i`, `K_d`, `K_ff` and driving to a test position, no reflashing required. |
-| [**Belt-drive prototype**](media/demo/belt-drive-test.MOV) | GT2 belt + BLDC + SimpleFOCMini test rig for the next revision of the axis (see [Future work](#future-work)). |
+| [**Teleoperation**](media/demo/teleoperation.mp4) | Manually driving the central axis with the control box knob. |
+| [**Homing sequence**](media/demo/homing-sequence.mp4) | Automatic homing against the limit switches on power-up. |
+| [**PID tuning**](media/demo/pid-tuning.mp4) | Live on-device menu for tuning `K_p`, `K_i`, `K_d`, `K_ff` and driving to a test position, no reflashing required. |
+| [**Belt-drive prototype**](media/demo/belt-drive-test.mp4) | GT2 belt + BLDC + SimpleFOCMini test rig for the next revision of the axis (see [Future work](#future-work)). |
 
 ## How it works
 
