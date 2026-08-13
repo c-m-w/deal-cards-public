@@ -147,6 +147,7 @@ The card holder's height is adjustable via four screws so the feeder rollers can
   - [`src/menu/`](code-esp32/src/menu): the TFT menu system and its screens (homing, homing prompt, PID tuning).
 - [`plot-pid/`](plot-pid): a Python tool that reads the ESP32's serial output and live-plots any `>plot_name:line_name(x,y)` lines the firmware prints. Any number of plots and lines are picked up automatically; this is what the PID tuning is verified against.
 - [`CAD/`](CAD): mechanical design files.
+- [`vcnt2030-breakout/`](vcnt2030-breakout): KiCad project for the custom VCNT2030 sensor breakout board.
 - [`media/`](media): photos and demo videos.
 
 ## Future work
