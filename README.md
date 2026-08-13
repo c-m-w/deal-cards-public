@@ -89,6 +89,17 @@ The travel range recorded here is what `robot::move_to()` and the manual jog con
 
 Dealing a single card ([`robot::fire()`](code-esp32/src/robot.cpp)) spins up the launch BLDC, starts the feeder rollers, and then **waits on the VCNT2030 proximity sensor** rather than a fixed delay before considering the card dealt and moving to the next player. If a card doesn't feed cleanly, the robot waits rather than silently skipping a player.
 
+## VCNT2030 breakout board
+
+The VCNT2030 proximity sensor used for [card detection](#how-it-works) runs on a small breakout board I designed myself (KiCad) and had fabricated through JLCPCB, rather than a stock module. The layout follows the sensor's [application note](vcnt2030-breakout/designing_vcnt2030_into_an_application.pdf) for ambient-light suppression and long-range operation, and includes a decoupling capacitor across the sensor's DC supply pins to keep switching noise from the rest of the board out of the analog front end.
+
+<p>
+  <img src="media/vcnt2030-breakout/schematic.png" alt="VCNT2030 breakout schematic" width="48%">
+  <img src="media/vcnt2030-breakout/pcb.png" alt="VCNT2030 breakout PCB layout" width="48%">
+</p>
+
+*Schematic and PCB layout for the VCNT2030 breakout board.*
+
 ## Control box
 
 The handheld control box talks to the robot's ESP32-S3 over GPIO/I2C and drives a small SPI TFT menu system ([`src/menu`](code-esp32/src/menu)):
